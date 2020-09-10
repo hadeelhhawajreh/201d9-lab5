@@ -7,9 +7,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+    var sumnum=a+b;
+    var arraysum=[sumnum,'The sum of '+ a+ ' and ' + b+ ' is '+ sumnum];
+    console.log(arraysum);
+    return arraysum;
 }
 
+sum(4, 7);
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
