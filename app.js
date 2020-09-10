@@ -89,7 +89,7 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
     var summation = 0;
-    var a=0;
+    var a = 0;
     //i = 0    2 
     //summation =5
     //a= 5
@@ -100,9 +100,9 @@ function sumArray(sumArr) { //eslint-disable-line
         summation = a;
     }
     console.log(summation);
-    var msg='2,3,4 was passed in as an array of numbers, and '+ summation+ ' is their sum.';
-    return [summation,msg];
-    
+    var msg = '2,3,4 was passed in as an array of numbers, and ' + summation + ' is their sum.';
+    return [summation, msg];
+
 
 }
 
@@ -120,19 +120,29 @@ follows this example and uses the values that were input into the function:
 "The numbers 2,3,4 have a product of 24."
 IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. This function should handle an array containing three elements. However, you may continue to use the + operator for string concatenation.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
+var arrays = [1, 2, 3, 4, 5];
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-    // var arrays=[1,2,3,4,5];
-    // for(var i=0;i<arrays.length;i++){
+    var a = 1;
+    var mutiplying = 1;
 
-    // }
+    for (var i = 0; i < multArr.length; i++) {
+        a = multiply(a, multArr[i]);
+        a = a[0];
+        mutiplying = a;
+
+    }
+    var msg = 'The numbers 2,3,4 have a product of ' + mutiplying + '.';
+    console.log(mutiplying);
+    return [mutiplying, msg];
 
 
 }
+multiplyArray(arrays);
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
