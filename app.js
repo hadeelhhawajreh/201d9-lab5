@@ -174,14 +174,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     var msg = 'The numbers 1,2,3,4,5 have a product of ' + mutiplying + '.';
     console.log(mutiplying);
     return [mutiplying, msg];
-
-
 }
-
-multiplyArray(testDynamicArray);
-
-
-
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyAnyArray(testDynamicArray);
